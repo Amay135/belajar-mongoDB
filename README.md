@@ -1,17 +1,17 @@
 # MongoDB Fundamentals
 
-A collection of MongoDB practice projects created while learning the fundamentals of NoSQL databases. This repository covers basic database operations, CRUD functionality, collections, and document management using MongoDB.
+A collection of MongoDB practice projects created while learning the fundamentals of NoSQL databases. This repository demonstrates basic database operations, CRUD functionality, collections, and document management using MongoDB.
 
 ## Features
 
-- Create Database
-- Create Collection
+- Database Creation
+- Collection Management
 - Insert Documents
 - Read Documents
 - Update Documents
 - Delete Documents
-- Query Documents
-- MongoDB CRUD Operations
+- Query and Filter Documents
+- CRUD Operations
 - Basic NoSQL Concepts
 
 ## Technologies Used
@@ -20,26 +20,13 @@ A collection of MongoDB practice projects created while learning the fundamental
 - MongoDB Compass
 - MongoDB Shell (mongosh)
 
-## Project Structure
-
-```
-.
-├── database/
-├── collections/
-├── queries/
-├── examples/
-└── README.md
-```
-
-> The folder structure may vary depending on the exercises included in this repository.
-
 ## Learning Objectives
 
 - Understand NoSQL database concepts
-- Learn MongoDB document structure
-- Perform CRUD operations
-- Practice querying and filtering documents
-- Manage collections and databases
+- Learn MongoDB document-based data modeling
+- Practice CRUD operations
+- Perform document queries and filtering
+- Manage databases and collections efficiently
 
 ## Getting Started
 
@@ -49,42 +36,42 @@ A collection of MongoDB practice projects created while learning the fundamental
 - MongoDB Compass (optional)
 - MongoDB Shell (mongosh)
 
-### Clone Repository
+### Clone the Repository
 
 ```bash
-git clone https://github.com/Amay135/belajar-mongoDB.git
+git clone https://github.com/Amay135/mongodb-fundamentals.git
 ```
 
-### Open MongoDB Shell
+### Navigate to the Project
+
+```bash
+cd mongodb-fundamentals
+```
+
+### Start MongoDB Shell
 
 ```bash
 mongosh
 ```
 
-### Create a Database
+### Create or Switch to a Database
 
 ```javascript
-use belajarMongoDB
+use mongodbFundamentals
 ```
 
-### Show Databases
-
-```javascript
-show dbs
-```
-
-## Example CRUD
+## Example CRUD Operations
 
 ### Insert
 
 ```javascript
 db.users.insertOne({
-    name: "John",
-    age: 20
+  name: "John",
+  age: 20
 })
 ```
 
-### Find
+### Read
 
 ```javascript
 db.users.find()
@@ -94,8 +81,8 @@ db.users.find()
 
 ```javascript
 db.users.updateOne(
-    { name: "John" },
-    { $set: { age: 21 } }
+  { name: "John" },
+  { $set: { age: 21 } }
 )
 ```
 
@@ -103,14 +90,14 @@ db.users.updateOne(
 
 ```javascript
 db.users.deleteOne({
-    name: "John"
+  name: "John"
 })
 ```
 
 ## Repository Purpose
 
-This repository is intended for educational purposes and documents my learning journey with MongoDB and NoSQL databases.
+This repository serves as a collection of MongoDB exercises and examples completed while learning NoSQL database development. It is intended for educational purposes and as part of my software development portfolio.
 
 ## Author
 
-GitHub: **Amay135**
+**GitHub:** https://github.com/Amay135
